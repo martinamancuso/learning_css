@@ -1,0 +1,32 @@
+article {
+  width: 20%;
+  /* l'article occuperà il 20% della pagina e sarà responsivo*/
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+article .image {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+article .block, article .item {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+article ul {
+  padding: 0;
+  /* il browser mi restituiva un padding solo a sinistra,
+  così ho assegnato il valore 0 alla proprietà 'padding'*/
+}
+
+article li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
