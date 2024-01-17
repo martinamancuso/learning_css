@@ -1,0 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+#yellow {
+  order: -1;
+  align-items: stretch;
+}
+
+#red {
+  order: -1;
+}
+
+#orange {
+  flex-grow: 1;
+}
+
+/* Per ottenere il layout a tutta pagina, 
+come nell'immagine allegata,
+è necessario sovrascrivere alcune delle regole 
+precedentemente espresse nel file 'style.css'.
+Per farlo, ho usato le regole qui sotto. */
+
+body {
+  margin: 0;
+  gap: 2em;
+}
+
+section {
+  margin: 0;
+}
