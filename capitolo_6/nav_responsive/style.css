@@ -66,6 +66,12 @@ nav form button:hover {
   background: white;
 }
 
+#hamburger-menu-icon {
+  height: 26px;
+  width: 32px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 767px) {
   /* nascondi la navbar */
   nav {
@@ -76,6 +82,9 @@ nav form button:hover {
 @media screen and (min-width: 768px) {
   /* nascondi hamburger menu */
   #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu-icon {
     display: none;
   }
 }
