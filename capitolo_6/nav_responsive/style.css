@@ -1,0 +1,65 @@
+header {
+  background-color: rgb(33, 37, 42);
+}
+
+nav {
+  border-bottom: 1px solid grey;
+  background-color: rgb(33, 37, 42);
+}
+
+nav h1, nav ul, nav li, nav form {
+  display: inline;
+}
+
+nav h1 {
+  color: white;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: grey;
+  margin: 10px;
+}
+
+nav ul li:first-of-type a {
+  color: white;
+}
+
+nav ul li a[aria-disabled="true"] {
+  color: #cccccc;
+}
+
+nav form {
+  margin-left: 100px;
+}
+
+nav form input {
+  border-radius: 5px;
+}
+
+nav form button {
+  background-color: rgb(33, 37, 42);
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+nav form button:hover {
+  background-color: green;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  /* mostra hamburger menu e nascondi la navbar */
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* mostra navbar e nascondi hamburger menu */
+  #hamburger-menu {
+    display: none;
+  }
+}
