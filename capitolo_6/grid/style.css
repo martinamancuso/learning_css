@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* remove me */
+.container div {
+  border: 1px solid black;
+}
+
+.result {
+  grid-column: 1 / span 4;
+}
+
+.buttons {
+  grid-column: 1 / span 4;
+  grid-row: 2;
+}
+
+.numbers {
+  grid-column: 1 / span 3;
+}
+
+.equals {
+  grid-column: 4;
+  grid-row: 3 / span 4;
+}
+
+/* .buttons > div {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  border-color: 1px solid black;
+}
+
+.numbers > div {
+  grid-template-columns: 1/4;
+  grid-template-rows: 2/7;
+  padding: 30px;
+} */
