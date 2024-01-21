@@ -1,0 +1,56 @@
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.cat {
+  /* width: 250px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.cat img {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+}
+
+.header .avatar svg {
+  fill: white;
+}
+
+.header .info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+}
+
+@media screen and (max-width: 375px) {
+  .cat {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .cat {
+    flex-basis: 49%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .cat {
+    flex-basis: 32%;
+  }
+}
