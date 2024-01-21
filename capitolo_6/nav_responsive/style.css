@@ -50,15 +50,31 @@ nav form button:hover {
   color: white;
 }
 
+#hamburger-menu {
+  height: 26px;
+  width: 32px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hamburger-menu .line {
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+
 @media screen and (max-width: 767px) {
-  /* mostra hamburger menu e nascondi la navbar */
+  /* nascondi la navbar */
   nav {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* mostra navbar e nascondi hamburger menu */
+  /* nascondi hamburger menu */
   #hamburger-menu {
     display: none;
   }
