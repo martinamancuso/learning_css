@@ -1,48 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --separator-color: rgb(137, 157, 174);
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 300px;
 }
 
-/* remove me */
 .container div {
-  border: 1px solid black;
+  text-align: center;
+  padding: 10px 0;
 }
 
-.result {
+.container .result {
   grid-column: 1 / span 4;
+  border-bottom: 1px solid var(--separator-color);
+  text-align: right;
+  background-color: rgb(67,77,83);
+  color: white;
+  font-size: bold;
+  padding-right: 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
-.buttons {
+.container .buttons {
   grid-column: 1 / span 4;
   grid-row: 2;
   display: grid;
   grid-template-columns: subgrid;
+  padding: 0;
+  background-color: rgb(205, 215, 222);
 }
 
-.numbers {
+.container .buttons div {
+  border-right: 2px solid var(--separator-color);
+}
+
+.container .buttons div:last-of-type {
+  border-right: none;
+}
+
+.container .numbers {
   grid-column: 1 / span 3;
   display: grid;
   grid-template-columns: subgrid;
+  padding: 0;
+  border-bottom-left-radius: 15px;
+  background-color: rgb(239,242,245);
 }
 
-.equals {
+.container .numbers div {
+  border-right: 2px solid var(--separator-color);
+  border-top: 2px solid var(--separator-color);
+}
+
+.container .equals {
   grid-column: 4;
   grid-row: 3 / span 4;
+  border-top: 1px solid var(--separator-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(170, 78, 84);
+  border-bottom-right-radius: 15px;
 }
-
-/* .buttons > div {
-  grid-template-columns: repeat(4, 1fr);
-  padding: 30px;
-  border-color: 1px solid black;
-}
-
-.numbers > div {
-  grid-template-columns: 1/4;
-  grid-template-rows: 2/7;
-  padding: 30px;
-} */
